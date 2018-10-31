@@ -1,0 +1,23 @@
+{
+  "name": "class-project",
+  "version": "1.0.0",
+  "description": "Dockerfiles for calss project",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.16.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/jeanwang2dev/nodeproject"
+  },
+  "keywords": [
+    "dockerfile",
+    "nodejs"
+  ],
+  "author": "Jean Wang<jeanharmsen.yahoo.com>",
+  "license": "ISC"
+}
+
