@@ -10,8 +10,8 @@ app.get('/', function(req, res){
 
 });  
 
-app.listen(8080, function(){
+app.listen(3000, function(){
 
-	console.log('Server up : http://localhost:8080');
+	console.log('Server up : http://localhost:3000');
 
 });
