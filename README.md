@@ -13,5 +13,5 @@ $ docker container run --rm -it -p <hostport>:3000 -v $(pwd):/app node-project b
 ```
 or
 ```
-$ docker container run -d -p <hostport>:3000 nodde-project
+$ docker container run -d -p <hostport>:3000 node-project
 ```
