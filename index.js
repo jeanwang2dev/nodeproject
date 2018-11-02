@@ -1,17 +1,21 @@
 'use strict'
+
 /* Set up main variables */
-
 var express = require('express'),
-    app = express();
+    app = express(),
+    config = require('./server/configure');
 
-app.get('/', function(req, res){
+/* Call the module.exports constructor function of the configure file
+This adds to app and returns app*/
+app = config(app);
 
-	res.send('<p style="color:blue;">This is Jean\'s Hello World Page!</p>');
+/* Set the port */
+app.set('port', process.env.PORT || 3000);
+  
 
-});  
+/* Listen on port 3000 */
+app.listen( app.get('port'), function(){
 
-app.listen(3000, function(){
-
-	console.log('Server up : http://localhost:3000');
+	console.log('Server up : http://localhost:' + app.get('port'));
 
 });
