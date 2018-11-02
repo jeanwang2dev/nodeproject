@@ -7,13 +7,15 @@
     "start": "node index.js"
   },
   "dependencies": {
-    "express": "^4.16.1"
+    "express": "^4.16.1",
+    "express-handlebars":"^3.0.0"
   },
   "repository": {
     "type": "git",
     "url": "github.com/jeanwang2dev/nodeproject"
   },
   "keywords": [
+    "javascript",
     "dockerfile",
     "nodejs"
   ],
