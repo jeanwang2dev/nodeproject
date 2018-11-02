@@ -12,6 +12,8 @@ app = config(app);
 /* Set the port */
 app.set('port', process.env.PORT || 3000);
   
+/* Make the views directory to  serve up the files within that directory */
+app.set('views', __dirname + '/views');
 
 /* Listen on port 3000 */
 app.listen( app.get('port'), function(){
