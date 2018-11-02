@@ -1,7 +1,8 @@
 module.exports = {
 	//this provides the content for the index page
   	index : function(req, res) {
-		res.send('It works!');
+                //render the home page
+		res.render('home',{title: 'Home Page'});
 	}
 	
 }
